@@ -8,7 +8,7 @@ interface props {
 
 const LayoutComponent = ({ children }: props) => {
   return (
-    <main className='grid  grid-cols-5 lg:grid-cols-6 grid-rows-5 h-screen w-full' >
+    <main className='bg-[url(/public/energia-verde-mano-sosteniendo-fondo-bombilla-ambiental.jpg)] bg-center bg-cover grid  grid-cols-5 lg:grid-cols-6 grid-rows-5 h-screen w-full' >
       <Navbar />
       <section className='col-start-2 col-span-4  row-span-4 lg:col-span-6 lg:row-start-2 lg:row-end-5 border-2 border-green-500'>
         {children}

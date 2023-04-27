@@ -1,12 +1,11 @@
 import React from 'react'
+import { routes } from './Navbar'
 
-interface props{
-    name:string
-}
 
-const Navlink = ({name}:props) => {
+
+const Navlink = ({url,route}:routes) => {
   return (
-    <button className='border-2 border-black'>{name}</button>
+    <button className='border-white border-2 rounded-lg p-2 text-lg uppercase'>{route}</button>
   )
 }
 
