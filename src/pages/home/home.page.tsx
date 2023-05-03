@@ -36,7 +36,7 @@ const HomePage = () => {
 
   return (
     <>
-      <header className="p-2 text-slate-500">
+      <header className="p-2">
         <h2 className="text-4xl tracking-wider mb-2 text-justify">ElectroBas su empresa electrica de confianza</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Delectus, ipsum voluptatibus quia earum impedit illo, ipsam

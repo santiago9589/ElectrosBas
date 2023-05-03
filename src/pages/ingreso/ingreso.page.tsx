@@ -32,7 +32,7 @@ const IngresoPage = () => {
     return (
         <>
             <FormComponent handleSubmit={handleSubmit}>
-                <h2 className='text-4xl text-center tracking-wider uppercase text-slate-500'>Ingreso</h2>
+                <h2 className='text-4xl text-center tracking-wider uppercase'>Ingreso</h2>
                 <InputComponent
                     name="email"
                     type="text"

@@ -12,7 +12,7 @@ const ButtomForm = ({ name }: props) => {
     border-2 border-green-50
     rounded-lg
     p-4
-    text-lg
+    text-2xl
     uppercase
     w-full
     '>
