@@ -4,6 +4,7 @@ import { useFormik } from 'formik'
 import * as Yup from "yup"
 import InputComponent from '../../components/form/input'
 import ButtomForm from '../../components/form/buttom'
+import ButtonBack from '../../components/buttomBack'
 
 
 const IngresoPage = () => {
@@ -51,7 +52,7 @@ const IngresoPage = () => {
                 />
                 <ButtomForm name="Ingreso" />
             </FormComponent>
-
+            <ButtonBack/>
         </>
     )
 }

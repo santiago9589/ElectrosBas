@@ -2,9 +2,11 @@ import mision from "../../../public/buildings.jpg"
 import vision from "../../../public/vision.jpg"
 import obras from "../../../public/images.jpg"
 import QuienesSomosComponent from "../../components/quienesSomosComponent"
+import Navlink from "../../components/navLink"
+import ButtonBack from "../../components/buttomBack"
 
 
-export interface props{ name: string, img: string, content: string }
+interface props { name: string, img: string, content: string }
 
 const QuienesSomosPage = () => {
 
@@ -33,11 +35,12 @@ const QuienesSomosPage = () => {
         {
           data.map((element) => {
             return (
-              <QuienesSomosComponent key={element.name} name={element.name} content={element.content} img={element.img}/>
+              <QuienesSomosComponent key={element.name} name={element.name} content={element.content} img={element.img} />
             )
           })
         }
       </section>
+      <ButtonBack/>
     </>
   )
 }
