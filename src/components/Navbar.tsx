@@ -1,6 +1,7 @@
 import React from 'react'
 import Navlink from './navLink'
 import logo from "../../public/logo.jpg"
+import { useNavigate } from "react-router-dom";
 
 export interface routes {
   url: string
@@ -25,6 +26,10 @@ const Navbar = () => {
     {
       url: "/servicios",
       route: "servicios"
+    },
+    {
+      url: "/",
+      route: "home"
     },
 
   ]
