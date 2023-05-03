@@ -5,6 +5,7 @@ import QuienesSomosPage from "./pages/quienes/quienes.page"
 import {Route,Routes} from "react-router-dom";
 
 import React from "react"
+import ServiciosPage from "./pages/servicios/servicios.page";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<HomePage />}/>
         <Route path="/ingreso" element={<IngresoPage />}/>
         <Route path="/quienessomos" element={<QuienesSomosPage />}/>
+        <Route path="/servicios" element={<ServiciosPage />}/>
       </Routes>
     </LayoutComponent>
   )
