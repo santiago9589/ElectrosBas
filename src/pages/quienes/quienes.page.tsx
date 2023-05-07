@@ -1,8 +1,7 @@
-import mision from "../../../public/buildings.jpg"
-import vision from "../../../public/vision.jpg"
-import obras from "../../../public/images.jpg"
+import mision from "../../assets/buildings.jpg"
+import vision from "../../assets/vision.jpg"
+import obras from "../../assets/images.jpg"
 import QuienesSomosComponent from "../../components/quienesSomosComponent"
-import Navlink from "../../components/navLink"
 import ButtonBack from "../../components/buttomBack"
 
 

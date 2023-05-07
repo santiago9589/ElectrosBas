@@ -1,10 +1,10 @@
 import React from 'react'
 import ButtonBack from '../../components/buttomBack'
 import ServiciosComponent from '../../components/serviciosComponent'
-import reparaciones from "../../../public/reparaciones.jpg"
-import instalacion from "../../../public/instalacion.jpg"
-import proyectos from "../../../public/proyectos.jpg"
-import asesoramiento from "../../../public/asesoramiento.jpg"
+import reparaciones from "../../assets/reparaciones.jpg"
+import instalacion from "../../assets/instalacion.jpg"
+import proyectos from "../../assets/proyectos.jpg"
+import asesoramiento from "../../assets/asesoramiento.jpg"
 
 interface props { name: string, img: string, content: string }
 

@@ -1,7 +1,7 @@
-import servicios from "../../../public/servicios.jpg"
-import ingreso from "../../../public/login.jpg"
-import ubicacion from "../../../public/ubicacion.jpg"
-import quienes from "../../../public/quienesSomos.jpg"
+import servicios from "../../assets/servicios.jpg"
+import ingreso from "../../assets/login.jpg"
+import ubicacion from "../../assets/ubicacion.jpg"
+import quienes from "../../assets/quienesSomos.jpg"
 import HomeComponent from "../../components/homeComponent"
 import { useState } from "react"
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import Navlink from './navLink'
-import logo from "../../public/logo.jpg"
-import { useNavigate } from "react-router-dom";
+import logo from "../../src/assets/logo.jpg"
+
 
 export interface routes {
   url: string
