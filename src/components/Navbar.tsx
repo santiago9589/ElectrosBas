@@ -35,7 +35,7 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className='bg-gradient-to-r from-slate-200 via-white to-slate-200 lg:col-span-6 row-span-4 lg:row-span-1 flex flex-col lg:flex-row justify-between items-center p-4'>
+    <nav className='bg-gradient-to-r from-gray-500 via-white to-gray-500 lg:col-span-6 row-span-4 lg:row-span-1 flex flex-col lg:flex-row justify-between items-center p-4'>
       <section className='w-full h-48 lg:h-fit lg:w-1/2 flex flex-col justify-center lg:flex-row items-center space-x-8 box-border'>
         <img src={logo} className='h-48 w-48' />
         <h1 className='text-center hidden lg:block lg:text-5xl uppercase tracking-wider'>Electro Bas</h1>

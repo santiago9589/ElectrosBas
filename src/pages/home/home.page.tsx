@@ -11,7 +11,7 @@ interface props { name: string, img: string, content: string }
 const HomePage = () => {
 
 
-  const [whoIsVisible, setWhoIsVisible] = useState<number>(0)
+  const [whoIsVisible, setWhoIsVisible] = useState<string>("servicios")
 
   const data: props[] = [
     {
@@ -37,25 +37,6 @@ const HomePage = () => {
 
   ]
 
-
-  const handleIncremental = (incremental: number) => {
-
-
-    if (whoIsVisible === 0) {
-      setWhoIsVisible(whoIsVisible + 1)
-    } else {
-      if (whoIsVisible < data.length - 1) {
-
-        setWhoIsVisible(whoIsVisible + incremental)
-
-      } else {
-        setWhoIsVisible(whoIsVisible - 1)
-      }
-    }
-
-  }
-
-
   return (
     <>
       <header className="p-2">
@@ -68,30 +49,31 @@ const HomePage = () => {
           itaque porro nemo deleniti maiores ab! Fugiat voluptates unde
           harum doloremque, voluptatum quos enim.</p>
       </header>
-      <section className="mt-2 flex flex-col  box-border p-2 justify-between items-center h-[500px] w-full">
-        <section className="w-1/2 h-full">
+      <section className="mt-2 flex flex-col h-[570px] box-border p-2  w-full">
+        <section className="w-1/2 h-full mx-auto">
           {
-            data.map((element, index) => {
+            data.map((element) => {
               return (
                 <HomeComponent key={element.name}
                   name={element.name}
                   content={element.content}
                   img={element.img}
-                  isVisible={whoIsVisible === index}
+                  isVisible={whoIsVisible === element.name}
                 />
               )
             })
           }
         </section>
-        <section className="flex space-x-8 items-center justify-between mt-4">
-          <button className="border-2 border-black p-2 text-xl rounded-lg" onClick={() => handleIncremental(-1)}>Anterior</button>
+        <section className="flex space-x-8 items-center justify-center mt-4">
+          {
+              data.map((element) => {
+                console.log(element.name)
+                return (
+                  <section key={element.name} onClick={()=>setWhoIsVisible(element.name)} className={`${element.name === whoIsVisible ? "bg-slate-300" : ""  } flex items-center justify-center border-[0.5px] border-whiteReq w-12 h-12 rounded-full`}></section>
+                )
+              })
+          }
           
-          <button
-            className="border-2 border-black p-2 text-xl rounded-lg" onClick={() => {
-              handleIncremental(1)
-            }}
-          >Siguiente</button>
-
         </section>
       </section>
 
