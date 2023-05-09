@@ -10,7 +10,7 @@ const ButtomForm = ({ name }: props) => {
       type="submit"
       className='bg-green-600
     border-2 border-green-50
-    rounded-lg
+    rounded-xl
     p-4
     text-2xl
     uppercase

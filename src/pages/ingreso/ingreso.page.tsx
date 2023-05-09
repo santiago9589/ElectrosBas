@@ -7,6 +7,8 @@ import ButtomForm from '../../components/form/buttom'
 import ButtonBack from '../../components/buttomBack'
 
 
+
+
 const IngresoPage = () => {
 
     const initValues = {
@@ -51,8 +53,9 @@ const IngresoPage = () => {
                     touched={touched.password!}
                 />
                 <ButtomForm name="Ingreso" />
+               <ButtonBack/>
             </FormComponent>
-            <ButtonBack/>
+
         </>
     )
 }

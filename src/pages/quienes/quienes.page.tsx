@@ -39,7 +39,9 @@ const QuienesSomosPage = () => {
           })
         }
       </section>
-      <ButtonBack/>
+      <section className="w-1/4 mx-auto mt-2">
+        <ButtonBack />
+      </section>
     </>
   )
 }

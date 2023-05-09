@@ -12,7 +12,7 @@ interface props {
 const InputComponent = ({ name, type, handleChange, touched, errors, value }: props) => {
     return (
         <>
-            <label className='text-2xl  text-black capitalize'>{name}</label>
+            <label className='text-4xl  text-black capitalize'>{name}</label>
             <input
                 className='p-4 rounded-lg bg-slate-100 placeholder:text-slate-400  text-black'
                 type={type}

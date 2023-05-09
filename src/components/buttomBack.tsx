@@ -1,11 +1,12 @@
 import React from 'react'
 import Navlink from './navLink'
+import { Link } from 'react-router-dom'
 
 const ButtonBack = () => {
     return (
-        <section className="flex justify-center mt-2">
-            <Navlink url="/" route="Back" />
-        </section>
+        <Link to={"/"}>
+            <button className='bg-slate-100 border-2 border-green-50 rounded-xl p-4 text-2xl uppercase w-full'>REGRESAR</button>
+        </Link>
     )
 }
 
