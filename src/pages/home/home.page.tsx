@@ -50,7 +50,7 @@ const HomePage = () => {
           harum doloremque, voluptatum quos enim.</p>
       </header>
       <section className="mt-2 flex flex-col h-[570px] box-border p-2  w-full">
-        <section className="w-1/2 h-full mx-auto">
+        <section className="w-full p-2 lg:p-0 lg:w-1/2 h-full mx-auto">
           {
             data.map((element) => {
               return (
