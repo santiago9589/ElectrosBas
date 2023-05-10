@@ -14,7 +14,7 @@ const ServiciosComponent = ({name,content,img}:props) => {
                     className="w-full h-full"
                 />
             </section>
-            <button className='border-2 border-black rounded-lg p-2 text-2xl'>Agendar turno</button>
+            <button className='border-2 bg-slate-100 capitalize rounded-lg p-2 text-2xl'>Agendar turno</button>
         </section>
     )
 }

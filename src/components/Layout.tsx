@@ -8,10 +8,10 @@ interface props {
 
 const LayoutComponent = ({ children }: props) => {
   return (
-    <main className='grid  grid-cols-5 lg:grid-cols-6 grid-rows-5 h-screen w-full' >
+    <main className='grid bg-[url(src/assets/fondofinal.jpg)] bg-top bg-cover grid-cols-5 lg:grid-cols-6 grid-rows-5 h-screen w-full' >
       <Navbar />
       <section 
-      className='bg-[url(src/assets/fondofinal.jpg)] bg-top bg-cover col-start-2 col-span-4  row-span-4 lg:col-span-6 lg:row-start-2 lg:row-end-5'>
+      className=' col-start-2 col-span-4  row-span-4 lg:col-span-6 lg:row-start-2 lg:row-end-5 overflow-y-auto'>
         {children}
       </section>
       <Footer />

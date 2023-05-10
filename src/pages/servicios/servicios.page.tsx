@@ -35,7 +35,7 @@ const ServiciosPage = () => {
   return (
     <>
       <h2 className="text-3xl tracking-wider text-center mt-2 uppercase">Servicios</h2>
-      <section className="mt-2 flex box-border p-2 gap-4">
+      <section className="mt-2 flex flex-col lg:flex-row box-border p-2 gap-4 items-center">
         {
           data.map((element) => {
             return (

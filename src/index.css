@@ -10,7 +10,7 @@
   }
 
 body{
-  @apply mx-auto container h-screen text-black font-medium
+  @apply mx-auto container h-screen text-black font-medium 
 }
 
 }

@@ -30,7 +30,7 @@ const QuienesSomosPage = () => {
   return (
     <>
       <h2 className="text-3xl tracking-wider text-center mt-2 uppercase">quienes somos</h2>
-      <section className="mt-2 flex box-border p-2 gap-4">
+      <section className="mt-2 flex flex-col lg:flex-row box-border p-2 gap-4">
         {
           data.map((element) => {
             return (
@@ -39,7 +39,7 @@ const QuienesSomosPage = () => {
           })
         }
       </section>
-      <section className="w-1/4 mx-auto mt-2">
+      <section className="w-1/2 mx-auto my-2">
         <ButtonBack />
       </section>
     </>

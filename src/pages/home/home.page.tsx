@@ -69,7 +69,7 @@ const HomePage = () => {
               data.map((element) => {
                 console.log(element.name)
                 return (
-                  <section key={element.name} onClick={()=>setWhoIsVisible(element.name)} className={`${element.name === whoIsVisible ? "bg-slate-300" : ""  } flex items-center justify-center border-[0.5px] border-whiteReq w-12 h-12 rounded-full`}></section>
+                  <section key={element.name} onClick={()=>setWhoIsVisible(element.name)} className={`${element.name === whoIsVisible ? "bg-slate-200" : ""  } flex items-center justify-center border-[0.5px] border-whiteReq w-12 h-12 rounded-full`}></section>
                 )
               })
           }
